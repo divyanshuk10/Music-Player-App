@@ -96,8 +96,8 @@ class PlayMusicFragment : Fragment(R.layout.fragment_play_music) {
 
     private fun seekTo5SecForward() {
         mediaPlayer.let {
-            if (it.currentPosition + Constants.seekForwardTime <= it.duration) {
-                mediaPlayer.seekTo(it.currentPosition + Constants.seekForwardTime)
+            if (it.currentPosition + Constants.seekTime <= it.duration) {
+                mediaPlayer.seekTo(it.currentPosition + Constants.seekTime)
             } else {
                 mediaPlayer.seekTo(it.duration)
             }
@@ -107,8 +107,8 @@ class PlayMusicFragment : Fragment(R.layout.fragment_play_music) {
 
     private fun seekTo5SecBackward() {
         mediaPlayer.let {
-            if (it.currentPosition - Constants.seekForwardTime > 0) {
-                mediaPlayer.seekTo(it.currentPosition - Constants.seekForwardTime)
+            if (it.currentPosition - Constants.seekTime > 0) {
+                mediaPlayer.seekTo(it.currentPosition - Constants.seekTime)
             } else {
                 mediaPlayer.seekTo(it.duration - it.duration)
             }

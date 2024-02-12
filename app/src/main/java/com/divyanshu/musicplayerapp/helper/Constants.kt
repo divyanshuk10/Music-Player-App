@@ -6,8 +6,7 @@ import java.util.concurrent.TimeUnit
 
 object Constants {
 
-    const val seekForwardTime = 5000
-    const val seekBackwardTime = 5000
+    const val seekTime = 5000
 
     fun Context.toast(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
